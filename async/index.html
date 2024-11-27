@@ -169,9 +169,9 @@
             <div class="loadingText">Loading</div>
         </div>
         <script nonce="DGCyZUsWUKZYdKpwxpvXRe6VsdF0l6em">
-            window.Aura || (window.Aura = {});
+            window.Aura = window.Aura || {};
+            window.Aura.bootstrap || (window.Aura.bootstrap = {});
             function initFramework() {
-                window.Aura = window.Aura || {};
                 window.Aura.app = auraConfig["context"]["app"];
                 window.Aura.beforeFrameworkInit = Aura.beforeFrameworkInit || [];
                 //window.Aura.inlineJsReady = time();
