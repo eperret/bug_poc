@@ -200,11 +200,7 @@
                         delete window.Aura.inlineJsLocker;
                     }
 
-                    if (true) {
-                        $A.initAsync(auraConfig);
-                    } else if (false) {
-                        $A.initConfig(auraConfig);
-                    }
+                    $A.initAsync(auraConfig);
                 }
                 window.Aura.afterFrameworkInit = Aura.afterFrameworkInit || [];
                 window.Aura.afterFrameworkInit.push(function auraPostInitBlock() {
@@ -312,7 +308,19 @@
                 },
                 "auraCmpDefBaseURI": "/auraCmpDef?_au=3847_JWU4FpvcQZv8SUKBpZSKkQ&_c=false&_density=VIEW_TWO&_dfs=c&_ff=DESKTOP&_l=true&_l10n=en_US&_lrmc=-386269907&_style=-1260017263&aura.app=markup://one:one&aura.mode=PROD",
                 "MaxParallelXHRCount": 12
-            }
+            };
+            (function() {
+                window.Aura.bootstrap.execBootstrapJs = window.performance && window.performance.now ? window.performance.now() : Date.now();
+                window.Aura.appBootstrapStatus = "loaded";
+                window.Aura.afterBootstrapReady = window.Aura.afterBootstrapReady || [];
+                if (window.Aura.afterBootstrapReady.length) {
+                    var queue = window.Aura.afterBootstrapReady;
+                    window.Aura.afterBootstrapReady = [];
+                    for (var i = 0; i < queue.length; i++) {
+                        queue[i]();
+                    }
+                }
+            }());
         </script>
         
         Example page
