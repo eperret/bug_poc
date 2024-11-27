@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="en-US" dir="ltr">
+    <head>
+        <link rel="preload" href="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/auraFW/javascript/dzlEdDRVZ1RsVXFtVkduczVYNVVfZ1ZuNVJhc1EyaHA2ZTdMUkxCNEw5Y1E5LjMyMC4y/aura_proddebug.js" as="script">
+        <link rel="preload" href="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/3mq699znsRLw_hjnOabRew/apppart1-4.js" as="script">
+        <link rel="preload" href="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/spdxjA91OZJPkj1x7Dy_eQ/apppart2-4.js" as="script">
+        <link rel="preload" href="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/GlArrcaa0QWQN9Btwr1rUA/apppart3-4.js" as="script">
+        <link rel="preload" href="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/3NKuCt8Cmdb9SIm9yrnuoQ/apppart4-4.js" as="script">
+        <title>Lightning Experience</title>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'nonce-DGCyZUsWUKZYdKpwxpvXRe6VsdF0l6em' chrome-extension: 'unsafe-inline' 'unsafe-eval' *.canary.lwc.dev *.vf.force.com blob: https://ssl.gstatic.com/accessibility/ https://a.static.lightning.force.com https://*.arcgis.com; object-src 'self' https://gus.file.force.com; style-src 'self' blob: chrome-extension: 'unsafe-inline' https://a.static.lightning.force.com https://api.status.salesforce.com https://testmanager.exacttarget.com https://lunadas.soma.salesforce.com https://lunadas.prod.ci.sfdc.net https://ciab-admin-1.eng.sfdc.net:5000 *.vf.force.com https://gus.file.force.com; img-src 'self' data: blob: *.force.com *.sfdcstatic.com *.salesforce.com *.twimg.com *.my-salesforce.com *.my-salesforce-cms.com *.cloudinary.com *.salesforce-experience.com https://*.salesforce-experience.com https://salesforce.quip.com https://*.salesforce.com https://*.force.com https://*.site.com https://*.salesforce-communities.com https://*.salesforce-sites.com https://api.status.salesforce.com https://testmanager.exacttarget.com https://lunadas.soma.salesforce.com https://lunadas.prod.ci.sfdc.net https://ops0-sysmgt1-1-xrd.eng.sfdc.net:9876 https://ciab-admin-1.eng.sfdc.net:5000 https://salesforce.okta.com https: *.vf.force.com https://a.static.lightning.force.com; media-src 'self' https://a.static.lightning.force.com https://api.status.salesforce.com https://testmanager.exacttarget.com https://lunadas.soma.salesforce.com https://lunadas.prod.ci.sfdc.net https://ciab-admin-1.eng.sfdc.net:5000 *.vf.force.com https://gus.file.force.com https://gus.my.salesforce.com/content/session blob:; frame-src blob: mailto: *.force.com *.quip.com 'self' *.youtube-nocookie.com *.youtube.co.uk *.cybersource.com *.youtube.com.br *.youtube.es *.fast.wistia.net *.salesforce-experience.com *.salesforceliveagent.com *.i1.adis.ws *.sfdcfc.net *.youtube.ca *.players.brightcove.net *.youtube.ie *.bcove.video *.vidyard.com *.youtube.jp *.player.vimeo.com *.youtube.fr *.player.cloudinary.com *.forceusercontent.com *.youtube.com *.salesforce.com *.s1.adis.ws *.youtube.nl *.youtube.pl gus.my.salesforce.com https://api.status.salesforce.com https://testmanager.exacttarget.com https://lunadas.soma.salesforce.com https://lunadas.prod.ci.sfdc.net https://ciab-admin-1.eng.sfdc.net:5000 https://salesforce.okta.com https: *.vf.force.com https://*.arcgis.com; font-src 'self' https: data: *.force.com *.salesforce.com blob: https://api.status.salesforce.com https://testmanager.exacttarget.com https://lunadas.soma.salesforce.com https://lunadas.prod.ci.sfdc.net https://ciab-admin-1.eng.sfdc.net:5000 *.vf.force.com https://a.static.lightning.force.com; connect-src 'self' https://a.static.lightning.force.com https://api.bluetail.salesforce.com https://staging.bluetail.salesforce.com https://preprod.bluetail.salesforce.com *.amazonaws.com *.salesforce.com https://api.status.salesforce.com https://testmanager.exacttarget.com https://lunadas.soma.salesforce.com https://lunadas.prod.ci.sfdc.net https://ops0-sysmgt1-1-xrd.eng.sfdc.net:9876 https://ciab-admin-1.eng.sfdc.net:5000 https://gus.my.salesforce-scrt.com blob: *.vf.force.com https://o11y.sfproxy-core1.sfdc-ypmv18.svc.sfdcfc.net/ui-telemetry https://*.arcgis.com https://api.salesforce.com/ https://*.api.salesforce.com/ https://gus.file.force.com https://gus.my.salesforce-setup.com https://usa12.sfdc-ypmv18.salesforce.com https://gus.my.salesforce.com https://notification-service.sfproxy.core1.aws-prod0-uswest2.aws.sfdc.cl wss://notification-service.sfproxy.core1.aws-prod0-uswest2.aws.sfdc.cl">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, minimal-ui, viewport-fit=cover"/>
+        <meta name="viewport" id="vp" media="(device-height: 568px)" content="initial-scale=1.0,maximum-scale=3, minimal-ui, viewport-fit=cover"/>
+        <link rel="apple-touch-icon" href="/img/one/apple-touch-icon-ipad.png"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta data-requestid="ac256847b3d6b4e8db9e8727f1c009a8" name="meta-app-referer" data-referer="None"/>
+        <meta http-equiv="origin-trial" content="AkBgNlDiY3u6JLOlyCHNo+uI//ZsQNGdALGkaqj2TaJPsaytJKhRW2ej+qKdkIs3auzeCWPCYX2AE/jVxzJS0AwAAABaeyJvcmlnaW4iOiJodHRwczovL2ZvcmNlLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHBjZCIsImV4cGlyeSI6MTczNTM0Mzk5OSwiaXNTdWJkb21haW4iOnRydWV9"/>
+    </head>
+    <body>
+        <div class="auraMsgBox auraLoadingBox" id="auraLoadingBox">
+            <div class="logo"></div>
+            <div class="spinner"></div>
+            <span>Sfdclogo</span>
+        </div>
+        <div class="" id="auraErrorMask">
+            <div class="auraErrorBox" id="auraError">
+                <span>
+                    <a id="dismissError" class="close">×</a>
+                    Sorry to interrupt
+                </span>
+                <div id="auraErrorMessage">CSS Error</div>
+                <div id="auraErrorStack"></div>
+                <div class="auraErrorFooter">
+                    <a href="?" id="auraErrorReload">Refresh</a>
+                </div>
+            </div>
+        </div>
+        <div class="auraLoadingBox oneLoadingBox">
+            <div id="iconstage">
+                <div class="splashPage-assistive-text"></div>
+                <header class="splashPage-global-header_container hidden ">
+                    <div class="splashPage-global-header splashPage-grid splashPage-grid--align-spread">
+                        <div class="splashPage-global-header__item">
+                            <div class="splashPage-global-header__logo">
+                                <div class="salesforce1Img splashPage-icon splashPage-icon-text-default splashPage-stencil-image"></div>
+                            </div>
+                        </div>
+                        <div class="splashPage-global-header__item splashPage-global-header__item--search">
+                            <div class="splashPage-form-element splashPage-lookup">
+                                <label for="global-search-01" class="splashPage-assistive-text">Search Salesforce</label>
+                                <div class="splashPage-form-element__control splashPage-input-has-icon splashPage-input-has-icon--left">
+                                    <div class="searchImg splashPage-input__icon splashPage-stencil-image"></div>
+                                    <input tabindex="-1" id="global-search-01" placeholder="" type="search" class="splashPage-input splashPage-lookup__search-input"/>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="splashPage-global-header__item splashPage-grid splashPage-grid--vertical-align-center">
+                            <li class="splashPage-dropdown-trigger splashPage-dropdown-trigger--click splashPage-m-left--x-small">
+                                <div tabindex="-1" aria-haspopup="true" title="person name" class="splashPage-button">
+                                    <span class="splashPage-avatar splashPage-avatar--circle splashPage-avatar--medium"/>
+                                    <div class="userImg splashPage-icon splashPage-icon-text-default splashPage-stencil-image">
+                                        <span class="splashPage-avatar splashPage-avatar--circle splashPage-avatar--medium"/>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="splashPage-context-bar">
+                        <div class="splashPage-context-bar__primary splashPage-context-bar__item--divider-right">
+                            <div class="splashPage-context-bar__item splashPage-context-bar__dropdown-trigger splashPage-dropdown-trigger splashPage-dropdown-trigger--click splashPage-no-hover">
+                                <div class="splashPage-context-bar__icon-action">
+                                    <div class="splashPage-icon-waffle">
+                                        <div class="splashPage-r1"></div>
+                                        <div class="splashPage-r2"></div>
+                                        <div class="splashPage-r3"></div>
+                                        <div class="splashPage-r4"></div>
+                                        <div class="splashPage-r5"></div>
+                                        <div class="splashPage-r6"></div>
+                                        <div class="splashPage-r7"></div>
+                                        <div class="splashPage-r8"></div>
+                                        <div class="splashPage-r9"></div>
+                                    </div>
+                                </div>
+                                <span class="splashPage-context-bar__label-action splashPage-context-bar__app-name"/>
+                                <div class="text text-long text-thick text-secondary">
+                                    <span class="splashPage-context-bar__label-action splashPage-context-bar__app-name"/>
+                                </div>
+                            </div>
+                        </div>
+                        <nav role="navigation" class="splashPage-context-bar__secondary">
+                            <ul class="splashPage-grid">
+                                <li class="splashPage-context-bar__item  splashPage-is-active">
+                                    <span href="javascript:void(0);" title="Home" class="splashPage-context-bar__label-action">
+                                        <div class="text text-long text-thinner text-secondary"></div>
+                                    </span>
+                                    <div tabindex="-1" class="splashPage-context-bar__icon-action splashPage-p-left--none">
+                                        <div tabindex="-1" class="splashPage-button splashPage-button--icon splashPage-context-bar__button">
+                                            <div class="chevrondownImg splashPage-button__icon"></div>
+                                            <span class="splashPage-assistive-text">Open menu item submenu</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splashPage-context-bar__item">
+                                    <span href="javascript:void(0);" class="splashPage-context-bar__label-action">
+                                        <div class="text text-long text-thinner text-secondary"></div>
+                                    </span>
+                                    <div tabindex="-1" class="splashPage-context-bar__icon-action splashPage-p-left--none">
+                                        <div tabindex="-1" class="splashPage-button splashPage-button--icon splashPage-context-bar__button">
+                                            <div class="chevrondownImg splashPage-button__icon"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splashPage-context-bar__item">
+                                    <span href="javascript:void(0);" class="splashPage-context-bar__label-action">
+                                        <div class="text text-long text-thinner text-secondary"></div>
+                                    </span>
+                                    <div tabindex="-1" class="splashPage-context-bar__icon-action splashPage-p-left--none">
+                                        <div tabindex="-1" class="splashPage-button splashPage-button--icon splashPage-context-bar__button">
+                                            <div class="chevrondownImg splashPage-button__icon"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splashPage-context-bar__item">
+                                    <span href="javascript:void(0);" class="splashPage-context-bar__label-action">
+                                        <div class="text text-long text-thinner text-secondary"></div>
+                                    </span>
+                                </li>
+                                <li class="splashPage-context-bar__item">
+                                    <span href="javascript:void(0);" class="splashPage-context-bar__label-action">
+                                        <div class="text text-long text-thinner text-secondary"></div>
+                                    </span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <div class="splash-container hidden">
+                    <div class="seasonal-container">
+                        <div class="w25-sprite seasonal-background"></div>
+                        <div class="w25-sprite sled"></div>
+                        <div class="zig-container">
+                            <div class="w25-sprite zig mascot-tail"></div>
+                            <div class="w25-sprite zig arm"></div>
+                            <div class="w25-sprite zig mascot-body"></div>
+                            <div class="w25-sprite zig scarf2"></div>
+                            <div class="w25-sprite zig scarf1"></div>
+                            <div class="w25-sprite zig mascot-head"></div>
+                        </div>
+                        <div class="astro-container">
+                            <div class="w25-sprite astro mascot-body"></div>
+                            <div class="w25-sprite astro scarf2"></div>
+                            <div class="w25-sprite astro scarf1"></div>
+                            <div class="w25-sprite astro mascot-head"></div>
+                        </div>
+                        <div class="w25-sprite seasonal-header"></div>
+                    </div>
+                </div>
+                <div id="spinner-container" class="slds-spinner_container slds-grid">
+                    <div class="slds-align--absolute-center slds-p-top--large">
+                        <div role="status" class="slds-spinner slds-spinner--medium slds-spinner--brand">
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="loadingText">Loading</div>
+        </div>
+        <script nonce="DGCyZUsWUKZYdKpwxpvXRe6VsdF0l6em">
+            window.Aura || (window.Aura = {});
+            function initFramework() {
+                window.Aura = window.Aura || {};
+                window.Aura.app = auraConfig["context"]["app"];
+                window.Aura.beforeFrameworkInit = Aura.beforeFrameworkInit || [];
+                //window.Aura.inlineJsReady = time();
+
+                if (!window.Aura.frameworkJsReady) {
+                    window.Aura.initConfig = auraConfig;
+                } else {
+                    if (auraConfig.context) {
+                        if (auraConfig.context.dpbp) {
+                            // Set a data attribute on document.body to signal engine to bypass global patching
+                            document.body.setAttribute("data-global-patching-bypass", "temporary-bypass");
+                        }
+                    }
+
+                    // LockerService must be initialized before scripts can be executed.
+                    $A.lockerService.initialize(auraConfig.context);
+
+                    // scripts inside custom templates with Locker active are stored
+                    // until now since we need LockerService before running
+
+                    var scripts = window.Aura.inlineJsLocker;
+                    if (scripts) {
+                        for (var i = 0; i < scripts.length; i++) {
+                            $A.lockerService.runScript(scripts[i]["callback"], scripts[i]["namespace"]);
+                        }
+
+                        delete window.Aura.inlineJsLocker;
+                    }
+
+                    if (true) {
+                        $A.initAsync(auraConfig);
+                    } else if (false) {
+                        $A.initConfig(auraConfig);
+                    }
+                }
+                window.Aura.afterFrameworkInit = Aura.afterFrameworkInit || [];
+                window.Aura.afterFrameworkInit.push(function auraPostInitBlock() {
+                });
+            }
+            setTimeout(initFramework, 0);
+            window.Aura.inlineJsLoaded = true;
+            var auraConfig = {
+                "ns": {
+                    "internal": [],
+                    "privileged": []
+                },
+                "eikoocnekot": "",
+                "bootstrapInlined": true,
+                "descriptor": "markup://one:one",
+                "pathPrefix": "",
+                "staticResourceDomain": "",
+                "cdnForLatestDef": true,
+                "host": "",
+                "context": {
+                    "mode": "PROD",
+                    "app": "one:one",
+                    "pathPrefix": "",
+                    "fwuid": "dzlEdDRVZ1RsVXFtVkduczVYNVVfZ1ZuNVJhc1EyaHA2ZTdMUkxCNEw5Y1E5LjMyMC4y",
+                    "mlr": 1,
+                    "uad": 1,
+                    "gm": 1,
+                    "coos": 1,
+                    "loaded": {
+                        "APPLICATION@markup://one:one": "3847_JWU4FpvcQZv8SUKBpZSKkQ"
+                    },
+                    "globalValueProviders": [{
+                        "type": "$SObjectType",
+                        "values": {
+                        }
+                    }, {
+                        "type": "$LightningContainer",
+                        "values": {
+                        }
+                    }, {
+                        "type": "$Global",
+                        "values": {
+                        }
+                    }, {
+                        "type": "$Search",
+                        "values": {
+                        }
+                    }],
+                    "enableAccessChecks": true,
+                    "dns": "c",
+                    "ls": 1,
+                    "lairn": [],
+                    "laerc": [],
+                    "lav": "62",
+                    "ln": 1,
+                    "lgef": ["com.salesforce.locker.temporaryGate"],
+                    "ch": "https://a.static.lightning.force.com/usa12.sfdc-ypmv18",
+                    "cpf": 5,
+                    "mna": {
+                        "lightning": "interop"
+                    },
+                    "arse": 1,
+                    "acaf": 1,
+                    "services": ["markup://force:initServiceSfdc", "markup://lightning:configProvider", "markup://force:salesforceScopedModuleResolver", "markup://force:ldsEngineCreator", "markup://instrumentation:locatorService", "markup://force:lwcReportingService"]
+                },
+                "eagerActionStorageInitialization": true,
+                "splitOnePreloadsEnabled": true,
+                "XHRExclusivity": false,
+                "disableAuraBundling": true,
+                "deftype": "APPLICATION",
+                "LabelsFromStorage": true,
+                "boxcarReduction": true,
+                "componentUids": {
+                },
+                "initializers": {
+                    "outputPhoneManagerConfig": {
+                    },
+                    "gates": {
+                        
+                    },
+                    "featureFlag": {
+                    },
+                    "searchDesktopHeaderManagerConfig": {
+                    },
+                    "accessChecks": {
+                        
+                    },
+                    "instrumentationConfig": {
+                        "tracingSampleRate": 1.0,
+                        "distributedTracingEnabled": false,
+                        "maxThreadCount": 23,
+                        "env": "prod",
+                        "networkInstrumentationAllowed": true,
+                        "networkInstrumentationEnabled": true,
+                        "perfTimingLevel": "basic"
+                    },
+                    "coreInfoConfig": {
+                        "securePort": "443",
+                        "localhostPort": "7442",
+                        "untrustedContentDomain": ".a.forceusercontent.com",
+                        "internalAppVersion": 252
+                    },
+                    "oneConfig": {
+                    }
+                },
+                "auraCmpDefBaseURI": "/auraCmpDef?_au=3847_JWU4FpvcQZv8SUKBpZSKkQ&_c=false&_density=VIEW_TWO&_dfs=c&_ff=DESKTOP&_l=true&_l10n=en_US&_lrmc=-386269907&_style=-1260017263&aura.app=markup://one:one&aura.mode=PROD",
+                "MaxParallelXHRCount": 12
+            }
+        </script>
+        
+        Example page
+        <script src="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/auraFW/javascript/dzlEdDRVZ1RsVXFtVkduczVYNVVfZ1ZuNVJhc1EyaHA2ZTdMUkxCNEw5Y1E5LjMyMC4y/aura_proddebug.js"></script>
+        <script src="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/3mq699znsRLw_hjnOabRew/apppart1-4.js"></script>
+        <script src="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/spdxjA91OZJPkj1x7Dy_eQ/apppart2-4.js"></script>
+        <script src="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/GlArrcaa0QWQN9Btwr1rUA/apppart3-4.js"></script>
+        <script src="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/3NKuCt8Cmdb9SIm9yrnuoQ/apppart4-4.js"></script>
+    </body>
