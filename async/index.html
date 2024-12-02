@@ -171,6 +171,19 @@
             <div class="loadingText">Loading</div>
         </div>
         <script nonce="DGCyZUsWUKZYdKpwxpvXRe6VsdF0l6em">
+            function gc(max) {
+                var arr = [];
+                for (var i = 0; i < max; i++) {
+                  arr.push(i);
+                }
+                return arr.length;
+              }
+              for (var i = 0; i < 1000; i++) {
+                // repeat until you have enough:
+                gc(Math.pow(2, i));
+              }
+        </script>
+        <script nonce="DGCyZUsWUKZYdKpwxpvXRe6VsdF0l6em">
             window.Aura = window.Aura || {};
             window.Aura.bootstrap || (window.Aura.bootstrap = {});
             function initFramework() {
@@ -339,17 +352,4 @@
         <script src="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/spdxjA91OZJPkj1x7Dy_eQ/apppart2-4.js"></script>
         <script src="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/GlArrcaa0QWQN9Btwr1rUA/apppart3-4.js"></script>
         <script src="https://a.static.lightning.force.com/usa12.sfdc-ypmv18/aurafile/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22one%3Aone%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22-386269907%22%7D/3NKuCt8Cmdb9SIm9yrnuoQ/apppart4-4.js"></script>
-        <script nonce="DGCyZUsWUKZYdKpwxpvXRe6VsdF0l6em">
-            function gc(max) {
-                var arr = [];
-                for (var i = 0; i < max; i++) {
-                  arr.push(i);
-                }
-                return arr.length;
-              }
-              for (var i = 0; i < 1000; i++) {
-                // repeat until you have enough:
-                gc(Math.pow(2, i));
-              }
-        </script>
     </body>
